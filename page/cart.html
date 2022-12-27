@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/cart.css">
+  <script src="https://kit.fontawesome.com/7de9ee439a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div class="header">
+    <div>
+      <img width="181px" src="../image/ps5.jpg" alt="">
+    </div>
+    <div onclick="house()" class="house">
+      <i class="fa-solid fa-house"></i>
+      <span>TRANG CHỦ</span>
+    </div>
+
+    <div class="ps5">
+      <i class="fa-solid fa-gamepad"></i></i>
+      <span>PLAYSTATION5</span>
+    </div>
+
+    <div class="ps4">
+      <i class="fa-solid fa-gamepad"></i></i>
+      <span>PLAYSTATION4</span>
+    </div>
+
+    <div class="accessory">
+      <button class="dropbtn"><i class="fa-solid fa-hat-wizard"></i></i>
+        PHỤ KIỆN <i class="fa-sharp fa-solid fa-caret-down"></i></i> </button>
+
+      <div class="dropdown-content">
+        <a onclick="ps5(`headePhone`)" href="#demo">TAI NGHE</a>
+        <a onclick="ps5(`disc`)"  href="#demo">Đĩa GAME</a>
+        <a onclick="ps5(`glasses`)" href="#demo">BỘ KÍNH THỰC TẾ ẢO</a>
+      </div>
+    </div>
+
+    <div class="phone">
+      <i class="fa-solid fa-phone-volume"></i>
+      <span>0899955692</span>
+    </div>
+
+    <div class="cart">
+
+      <span onclick="newCart()">
+        <i class="fa-solid fa-cart-shopping"></i>
+        GIỎ HÀNG</span>
+    </div>
+
+    <div class="login">
+      <span onclick="logout()">ĐĂNG XUẤT</span>
+    </div>
+  </div>
+
+  <h1 id="cart">GIỎ HÀNG</h1>
+
+  <table class="table1">
+    <thead>
+      <tr>
+        <th>Mã sản phẩm</th>
+        <th>Hình ảnh</th>
+        <th>Tên sản phẩm</th>
+        <th>Giá tiền</th>
+        <th>Số lượng</th>
+        <th>Thành tiền</th>
+        <th>Chức năng</th>
+
+      </tr>
+    </thead>
+
+    <tbody id="addCart">
+
+    </tbody>
+
+  </table>
+
+ <table id="table2">
+  <tbody >
+    <tr>
+      <th>TỔNG HÓA ĐƠN</th>
+      <th id="payment"></th>
+      <th><button onclick="payment()" id="input-payment">THANH TOÁN</button></th>
+    </tr>
+  </tbody>
+  
+  
+ </table>
+
+  <div class="banner">
+    <img src="../image/cart.png" alt="">
+  </div>
+
+
+
+
+
+  <div class="footer">
+    <div class="information">
+      <p style="color :rgb(255, 255, 25)"> THẾ GIỚI PS5 </p>
+
+      <p> MST: 8598481211- 001</p>
+
+      <p> ĐỊA CHỈ: 592/2 Ao Sen, P7, Nam Từ Liêm, Tp.HN.</p>
+
+      <p> ĐIỆN THOẠI: 0899955692</p>
+
+      <p> ĐẠI LÝ ỦY QUYỀN CHÍNH HÃNG SONY PLAYSTATION VN.</p>
+    </div>
+
+    <div class="cardAtm">
+      <p style="color :rgb(255, 255, 25)"> THÔNG TIN TÀI KHOẢN</p>
+
+      <p> 1. CTK :Trần Bình Minh </p>
+      <p> * STK : 0899955692</p>
+      <p> * NH VP bank </p>
+
+      <p> 2. CTK : Lê Minh Tuyển</p>
+      <p> * STK : 1029276034</p>
+      <p> * NH Vietcombank </p>
+    </div>
+
+  </div>
+
+  <script src="../js/cart.js"></script>
+</body>
+
+</html>
